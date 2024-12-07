@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  transition: all 0.3s;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  background-color: #293349;
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 20px;
+  gap: 20px;
+  height: 100dvh;
+}
+
+.days {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px 0;
+}
+
+.day {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 300px;
+  width: 80px;
+  background-color: #149eca;
+  border: 3px solid #d5ff80;
+  padding-bottom: 30px;
+}
+
+.drawing-area {
+  width: 90%;
+  background-color: #73d0ff;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: space-around;
+  flex-direction: column;
+  gap: 2px;
+  padding: 2px;
+}
+
+.border-2px {
+  border: 2px solid black;
+}
+
+.costs {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: bold;
+}
+
+.returns {
+  font-weight: bold;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  display: flex;
+  gap: 10px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.form input {
+  width: 100px;
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+button.submit-btn {
+  background-color: #d5ff80;
+  color: #1f2430;
+  padding: 0 20px;
+  font-weight: bolder;
+  border: 2px solid #1f2430;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button.submit-btn:hover {
+  background-color: #9de50d;
+}
+
+input::placeholder {
+  color: white;
+}
+
+input:focus {
+  outline: none;
+}
+
+.alaa {
+  background-color: #f0ff80;
+}
+
+.ehab {
+  background-color: coral;
+}
+
+.mostufa {
+  background-color: burlywood;
+}
+
+.calculation {
+  position: fixed;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(20deg, #045f7d, #149eca);
+  padding: 20px;
+  height: 140px;font-weight: bold;
+}
+
+.calculation.hidden {
+  bottom: -85px;
+}
+
+.calculate {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  border-radius: 5px;
+  padding: 5px 20px;
+  cursor: pointer;font-weight: bold;
+}
+
+.calculation {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  border: 2px solid white;
+  border-radius: 6px;
+}
+
+.ehab-profit {
+  color: coral;font-weight: bold;
+}
+
+.alaa-profit {
+  color: #f0ff80;font-weight: bold;
+}
+
+.mostufa-profit {
+  color: burlywood;font-weight: bold;
+}
+
+.z {
+  z-index: 9999;
+}
+
+.thin {
+  font-weight: thin !important;
+  font-size: 12px;
+}
